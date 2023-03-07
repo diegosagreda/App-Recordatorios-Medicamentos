@@ -18,7 +18,7 @@ const Login = () => {
   const usu = useRef(null);
   const pass = useRef(null);
 
-  const {usuario,usuarios,setUsuario} = useContext(AppContext);  
+  const {setUsuario} = useContext(AppContext);  
   const [registrar, setregistrar] = useState(false)
 
   useEffect(() => {

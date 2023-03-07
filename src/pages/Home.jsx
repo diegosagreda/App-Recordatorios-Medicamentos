@@ -10,7 +10,7 @@ export const Home = () => {
     const [openModal, setopenModal] = useState(false);
     /*Importamos funciones desde petiones api para cargar las solicitudes*/
     const {cargarSolicitudes,eliminarSolicitud,cargarUsuarios,getPaciente} = PeticioneApi();
-    const {solicitudes,setSolicitud,setUsuario} = useContext(AppContext);
+    const {solicitudes,setUsuario} = useContext(AppContext);
     const navegacion = useNavigate();
 
     const abrirModal = () => {
@@ -23,10 +23,7 @@ export const Home = () => {
         window.localStorage.setItem('paciente',JSON.stringify(getPaciente(solicitud.paciente)));
         navegacion('/solicitud');
     }
-    const eliminar = async (id) => {
-        await eliminarSolicitud(id);
-    }
-
+   
     const cerrarModal = () => {
         setopenModal(false);
     }

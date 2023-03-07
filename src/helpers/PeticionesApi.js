@@ -10,7 +10,7 @@ export const PeticioneApi = () => {
    
 
    
-    const {setSolicitudes,setUsuario,setUsuarios,usuarios,usuario,setPaciente,setRecordatorios } = useContext(AppContext);
+    const {setSolicitudes,setUsuarios,usuarios,setRecordatorios } = useContext(AppContext);
 
    /*Funcion para cargar todas las solicitudes*/
     const cargarSolicitudes = async () => {

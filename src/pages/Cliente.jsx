@@ -13,8 +13,8 @@ const Cliente = () => {
     
     const [openModal, setopenModal] = useState(false);
     /*Importamos funciones desde petiones api para cargar las solicitudes*/
-    const {cargarSolicitudes, cargarRecordatorios} = PeticioneApi();
-    const {solicitudes,setSolicitud,setUsuario,usuario,recordatorios} = useContext(AppContext);
+    const {cargarRecordatorios} = PeticioneApi();
+    const {setUsuario,usuario,recordatorios} = useContext(AppContext);
     const navegacion = useNavigate();
 
     const abrirModal = () => {

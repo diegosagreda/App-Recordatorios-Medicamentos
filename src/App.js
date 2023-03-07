@@ -1,17 +1,12 @@
 import './App.css';
-import { useContext } from 'react';
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Login from './pages/Login';
 import { Home } from './pages/Home';
-import { ProtectedRoute } from './components/ProtectedRoute';
 import Solicitud from './pages/Solicitud';
 import Cliente from './pages/Cliente';
-import { AppContext } from './context/AppContext';
-
 
 function App() {
 
-  const {usuario} = useContext(AppContext);
   
   return (
     <div className="App">

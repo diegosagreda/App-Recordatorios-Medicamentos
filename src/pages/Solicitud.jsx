@@ -9,15 +9,15 @@ import { PeticioneApi } from '../helpers/PeticionesApi';
 
 const Solicitud = () => {
 
- const {getPaciente,cargarRecordatorios,cargarUsuarios} = PeticioneApi()
+ const {cargarRecordatorios,cargarUsuarios} = PeticioneApi()
  
 
   const [openModal, setopenModal] = useState(false)
-  const {solicitud,paciente,recordatorios,setSolicitud,usuarios} = useContext(AppContext)
+  const {solicitud,recordatorios,setSolicitud} = useContext(AppContext)
   const [nombrePaciente, setnombrePaciente] = useState('')
   const [cedula, setcedula] = useState('')
   const navigate = useNavigate()
-  const [recordatoriosPaciente, setrecordatoriosPaciente] = useState([])
+
 
   const volverPantallaPrincipal = () => {
     navigate('/home')
