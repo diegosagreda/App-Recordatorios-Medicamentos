@@ -1,0 +1,23 @@
+.solicitud {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+
+}
+.datos-personales{
+    -webkit-box-shadow: 7px 10px 14px 2px rgba(219,208,219,0.42);
+    -moz-box-shadow: 7px 10px 14px 2px rgba(219,208,219,0.42);
+    box-shadow: 7px 10px 14px 2px rgba(219,208,219,0.42);
+    padding: 20px;
+}
+.datos-personales h5{
+    margin-bottom: 25px;
+}
+.personales{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.recordatorios{
+    padding-top: 10px;
+}

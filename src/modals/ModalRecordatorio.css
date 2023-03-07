@@ -1,0 +1,29 @@
+.modal-active{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+}
+.form-modal{
+    width: 350px;
+    height: 380px;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.acciones-modal button{
+    width: 100%;
+}
+.acciones-modal{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}

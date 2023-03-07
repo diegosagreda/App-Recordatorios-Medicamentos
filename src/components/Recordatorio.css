@@ -1,0 +1,33 @@
+.recordatorio{
+    display: flex;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 20px;
+}
+.items{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.btn-nuevoRecordatorio{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+
+}
+@media(max-width:600px){
+    .recordatorio{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .column1{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+
+}
